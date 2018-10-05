@@ -1,0 +1,29 @@
+{
+  "name": "stripe-siri-shortcuts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "micro-dev",
+    "start": "micro"
+  },
+  "author": "Jonathan Steele <jonathan@steele.pro> (https://steele.pro/)",
+  "license": "MIT",
+  "dependencies": {
+    "micro": "^9.3.3",
+    "micro-cors": "^0.1.0",
+    "microrouter": "^3.1.3",
+    "stripe": "^6.12.1"
+  },
+  "devDependencies": {
+    "husky": "^1.1.1",
+    "micro-dev": "^3.0.0",
+    "prettier": "^1.14.3",
+    "pretty-quick": "^1.7.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
